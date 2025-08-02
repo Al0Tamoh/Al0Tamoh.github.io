@@ -88,7 +88,7 @@ const Header = () => {
               isScrolled ? 'w-10 h-10' : 'w-14 h-14'
             }`}>
               <img 
-                src="logos/logo14.png" 
+                src="/assets/logo14.png" 
                 alt="مكتبة الطموح" 
                 className="h-full w-full object-cover"
               />
@@ -207,5 +207,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
