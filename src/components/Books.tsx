@@ -43,7 +43,7 @@ const Books = () => {
       category: "تحقيق و جريمة",
       description: "هذا الكتاب يستكشف جذور الحب والكراهية وتأثيرهما على الإنسان، ويتناول تطور المشاعر من الطفولة حتى الكهولة، بالإضافة إلى علاقة الحب بالرغبة الجنسية والأمومة.",
       price: 160,
-      image: "public/book-images/hard_cases.jpeg",
+      image: "/book-images/hard_cases.jpeg",
       author: "دار الطموح"
     },
     {
@@ -698,3 +698,4 @@ const Books = () => {
 };
 
 export default Books;
+
