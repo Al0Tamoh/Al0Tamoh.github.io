@@ -15,7 +15,7 @@ const Delivery = () => {
     {
       id: 1,
       title: "توصيل سريع",
-      description: "خدمة توصيل سريعة وموثوقة خلال 2-5 أيام إلى جميع المدن التركية",
+      description: "خدمة توصيل سريعة وموثوقة خلال 2-3 أيام إلى جميع المدن التركية",
       icon: Truck,
       gradientFrom: "from-[#0d0e2a]",
       gradientTo: "to-[#1e1f4a]"
@@ -23,7 +23,7 @@ const Delivery = () => {
     {
       id: 2,
       title: "دفع آمن",
-      description: "دفع آمن عبر التحويل البنكي IBAN أو الدفع عند الاستلام",
+      description: "دفع آمن عبر التحويل البنكي IBAN",
       icon: CreditCard,
       gradientFrom: "from-orange-500",
       gradientTo: "to-orange-600"
