@@ -45,6 +45,7 @@ const Books = () => {
 
   const books: Book[] = [
     // Special Offers - Books with discounts
+    // ========================================
     {
       id: 25,
       title: "فن اللامبالاة - عرض خاص",
@@ -89,7 +90,9 @@ const Books = () => {
       image: "./book-images/book12.jpg",
       author: "غابرييل غارسيا ماركيز"
     },
+
     // Dar Al-Tumooh Publications
+    // ========================================
     {
       id: 29,
       title: "رحلة نحو النجاح",
@@ -127,6 +130,10 @@ const Books = () => {
       author: "د. محمد الإيجابي"
     },
     // Original books
+    // ========================================
+    // all books + all categories
+
+    // Self-Devo book category :
     {
       id: 1,
       title: "فن اللامبالاة",
@@ -135,33 +142,6 @@ const Books = () => {
       price: 250,
       image: "./book-images/book1.jpg",
       author: "مارك مانسون"
-    },
-    {
-      id: 5,
-      title: "الرحيق المختوم",
-      category: "دينية",
-      description: "السيرة النبوية العطرة بأسلوب شائق",
-      price: 50,
-      image: "./book-images/book2.jpg",
-      author: "صفي الرحمن المباركفوري"
-    },
-    {
-      id: 6,
-      title: "تاريخ الطبري",
-      category: "تاريخية",
-      description: "تاريخ الرسل والملوك",
-      price: 55,
-      image: "./book-images/book3.jpg",
-      author: "محمد بن جرير الطبري"
-    },
-    {
-      id: 7,
-      title: "الأسود يليق بك",
-      category: "روايات",
-      description: "رواية عن الأناقة والثقة بالنفس",
-      price: 38,
-      image: "./book-images/book4.jpg",
-      author: "أحلام مستغانمي"
     },
     {
       id: 8,
@@ -173,24 +153,6 @@ const Books = () => {
       author: "دانيال جولمان"
     },
     {
-      id: 9,
-      title: "الكيمياء الحديثة",
-      category: "علمية",
-      description: "مقدمة شاملة في علم الكيمياء",
-      price: 60,
-      image: "./book-images/book6.jpg",
-      author: "رايموند تشانغ"
-    },
-    {
-      id: 10,
-      title: "ديوان المتنبي",
-      category: "شعر",
-      description: "أشعار أبي الطيب المتنبي",
-      price: 35,
-      image: "./book-images/book7.jpg",
-      author: "أبو الطيب المتنبي"
-    },
-    {
       id: 12,
       title: "كيف تكسب الأصدقاء وتؤثر في الناس",
       category: "تنمية ذاتية",
@@ -198,6 +160,28 @@ const Books = () => {
       price: 40,
       image: "./book-images/book8.jpg",
       author: "ديل كارنيجي"
+    },
+    {
+      id: 15,
+      title: "العادات السبع للناس الأكثر فعالية",
+      category: "تنمية ذاتية",
+      description: "دروس قوية في التغيير الشخصي",
+      price: 48,
+      image: "./book-images/book11.jpg",
+      author: "ستيفن كوفي"
+    },
+
+    // ========================================
+
+    // Diin book category
+    {
+      id: 5,
+      title: "الرحيق المختوم",
+      category: "دينية",
+      description: "السيرة النبوية العطرة بأسلوب شائق",
+      price: 50,
+      image: "./book-images/book2.jpg",
+      author: "صفي الرحمن المباركفوري"
     },
     {
       id: 13,
@@ -209,33 +193,6 @@ const Books = () => {
       author: "الحرمين الشريفين"
     },
     {
-      id: 14,
-      title: "ألف ليلة وليلة",
-      category: "أدب عالمي",
-      description: "من أشهر مجموعات الحكايات الشعبية",
-      price: 65,
-      image: "./book-images/book10.jpg",
-      author: "مجهول"
-    },
-    {
-      id: 15,
-      title: "العادات السبع للناس الأكثر فعالية",
-      category: "تنمية ذاتية",
-      description: "دروس قوية في التغيير الشخصي",
-      price: 48,
-      image: "./book-images/book11.jpg",
-      author: "ستيفن كوفي"
-    },
-    {
-      id: 16,
-      title: "مئة عام من العزلة",
-      category: "روايات",
-      description: "رائعة غابرييل غارسيا ماركيز",
-      price: 52,
-      image: "./book-images/book12.jpg",
-      author: "غابرييل غارسيا ماركيز"
-    },
-    {
       id: 17,
       title: "تفسير ابن كثير",
       category: "دينية",
@@ -244,23 +201,18 @@ const Books = () => {
       image: "./book-images/book13.jpg",
       author: "ابن كثير"
     },
+
+    // ========================================
+
+    // History book category
     {
-      id: 18,
-      title: "الأسرار السبعة للتربية المثلى",
-      category: "أطفال",
-      description: "دليل الآباء لتربية أطفال سعداء",
-      price: 35,
-      image: "./book-images/book14.jpg",
-      author: "د. محمد راتب النابلسي"
-    },
-    {
-      id: 19,
-      title: "فيزياء الكم المبسطة",
-      category: "علمية",
-      description: "مقدمة سهلة لعالم الكم المذهل",
-      price: 58,
-      image: "./book-images/book15.jpg",
-      author: "د. أحمد زكي"
+      id: 6,
+      title: "تاريخ الطبري",
+      category: "تاريخية",
+      description: "تاريخ الرسل والملوك",
+      price: 55,
+      image: "./book-images/book3.jpg",
+      author: "محمد بن جرير الطبري"
     },
     {
       id: 20,
@@ -271,14 +223,62 @@ const Books = () => {
       image: "./book-images/book16.jpg",
       author: "د. راغب السرجاني"
     },
+
+    // ========================================
+
+    // Novels book category
     {
-      id: 21,
-      title: "فلسفة الحياة",
-      category: "فكر وفلسفة",
-      description: "تأملات في معنى الوجود والحياة",
-      price: 44,
-      image: "./book-images/book17.jpg",
-      author: "د. مصطفى محمود"
+      id: 7,
+      title: "الأسود يليق بك",
+      category: "روايات",
+      description: "رواية عن الأناقة والثقة بالنفس",
+      price: 38,
+      image: "./book-images/book4.jpg",
+      author: "أحلام مستغانمي"
+    },
+    {
+      id: 16,
+      title: "مئة عام من العزلة",
+      category: "روايات",
+      description: "رائعة غابرييل غارسيا ماركيز",
+      price: 52,
+      image: "./book-images/book12.jpg",
+      author: "غابرييل غارسيا ماركيز"
+    },
+
+    // ========================================
+
+    // Science book category
+    {
+      id: 9,
+      title: "الكيمياء الحديثة",
+      category: "علمية",
+      description: "مقدمة شاملة في علم الكيمياء",
+      price: 60,
+      image: "./book-images/book6.jpg",
+      author: "رايموند تشانغ"
+    },
+    {
+      id: 19,
+      title: "فيزياء الكم المبسطة",
+      category: "علمية",
+      description: "مقدمة سهلة لعالم الكم المذهل",
+      price: 58,
+      image: "./book-images/book15.jpg",
+      author: "د. أحمد زكي"
+    },
+
+    // ========================================
+
+    // Poetry book category
+      {
+      id: 10,
+      title: "ديوان المتنبي",
+      category: "شعر",
+      description: "أشعار أبي الطيب المتنبي",
+      price: 35,
+      image: "./book-images/book7.jpg",
+      author: "أبو الطيب المتنبي"
     },
     {
       id: 22,
@@ -289,6 +289,49 @@ const Books = () => {
       image: "./book-images/book18.jpg",
       author: "الإمام الشافعي"
     },
+
+    // ========================================
+
+    // World Literature book category
+    {
+      id: 14,
+      title: "ألف ليلة وليلة",
+      category: "أدب عالمي",
+      description: "من أشهر مجموعات الحكايات الشعبية",
+      price: 65,
+      image: "./book-images/book10.jpg",
+      author: "مجهول"
+    },
+
+    // ========================================
+
+    // Children book category
+    {
+      id: 18,
+      title: "الأسرار السبعة للتربية المثلى",
+      category: "أطفال",
+      description: "دليل الآباء لتربية أطفال سعداء",
+      price: 35,
+      image: "./book-images/book14.jpg",
+      author: "د. محمد راتب النابلسي"
+    },
+
+    // ========================================
+
+    // Philosophy book category
+    {
+      id: 21,
+      title: "فلسفة الحياة",
+      category: "فكر وفلسفة",
+      description: "تأملات في معنى الوجود والحياة",
+      price: 44,
+      image: "./book-images/book17.jpg",
+      author: "د. مصطفى محمود"
+    },
+
+    // ========================================
+
+    // Culture book category
     {
       id: 23,
       title: "الثقافة العامة للجميع",
@@ -298,6 +341,10 @@ const Books = () => {
       image: "./book-images/book19.jpg",
       author: "د. أحمد أمين"
     },
+
+    // ========================================
+
+    // Education book category
     {
       id: 24,
       title: "أساسيات الرياضيات",
@@ -340,8 +387,7 @@ const Books = () => {
   // Get books to display based on booksToShow state
   const displayedBooks = filteredBooks.slice(0, booksToShow);
   
-  // Check if there are more books to show
-  const hasMoreBooks = filteredBooks.length > booksToShow;
+  // Check if showing all books
   const showingAllBooks = booksToShow >= filteredBooks.length;
 
   // Handle Show More button
@@ -510,7 +556,7 @@ const Books = () => {
         }`}>
           {/* Library Shelves Grid - Made more spacious */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-            {displayedBooks.map((book, index) => (
+            {displayedBooks.map((book) => (
               <div 
                 key={book.id} 
                 className="group relative transition-all duration-500 hover:scale-105"
