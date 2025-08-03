@@ -221,7 +221,7 @@ const Footer = () => {
                         {category.name === 'عروض خاصة' && (
                           <div className="mr-auto">
                             <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full animate-pulse">
-                              جديد
+                              بوقتٍ محدود
                             </span>
                           </div>
                         )}
@@ -277,7 +277,7 @@ const Footer = () => {
             {/* Developer Credits */}
             <div className="text-center lg:text-left">
               <p className="text-slate-300 text-sm">
-                تمت البرمجة من قبل الشاعر والمبرمج 
+                تمت البرمجة من قبل 
                 <span className="text-orange-400 font-medium"> ميسرة سالم</span>
               </p>
             </div>
@@ -325,5 +325,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
