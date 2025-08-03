@@ -32,26 +32,16 @@ const Footer = () => {
     window.open('https://www.instagram.com/tomouh.bookstore/', '_blank');
   };
 
-  // Function to scroll to books section and set category filter
+  // Simple function to just scroll to books section without any category manipulation
   const scrollToCategoryBooks = (category: string) => {
-    // First scroll to books section
+    // Just scroll to books section - let the user manually select the category
     const booksElement = document.getElementById('books');
     if (booksElement) {
       booksElement.scrollIntoView({ behavior: 'smooth' });
-      
-      // Wait a bit for the scroll to complete, then trigger category selection
-      setTimeout(() => {
-        // Find and click the category button
-        const categoryButtons = document.querySelectorAll('button');
-        const targetButton = Array.from(categoryButtons).find(button => 
-          button.textContent?.trim() === category
-        );
-        
-        if (targetButton) {
-          targetButton.click();
-        }
-      }, 800);
     }
+    
+    // Optional: Show a brief notification about which category the user wanted
+    console.log(`User wants to see: ${category}`);
   };
 
   const quickLinks = [
