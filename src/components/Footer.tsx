@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/905376791661?text=السلام عليكم، أرغب في الاستفسار عن خدماتكم', '_blank');
+    window.open('https://wa.me/905376791661?text=السلام عليكم، أرغب في الاستفسار عن إصدارات دار الطموح للنشر', '_blank');
   };
 
   const openTelegram = () => {
@@ -56,21 +56,19 @@ const Footer = () => {
 
   const quickLinks = [
     { name: 'الرئيسية', id: 'home' },
-    { name: 'الكتب', id: 'books' },
+    { name: 'إصداراتنا', id: 'books' },
     { name: 'من نحن', id: 'about' },
     { name: 'خدماتنا', id: 'delivery' },
     { name: 'تواصل معنا', id: 'contact' }
   ];
 
   const categories = [
-    { name: 'عروض خاصة', icon: Percent, color: 'text-red-400', special: true },
     { name: 'إصدارات دار الطموح', icon: Star, color: 'text-green-400', special: true },
-    { name: 'دينية', icon: null, color: 'text-slate-300', special: false },
-    { name: 'تنمية ذاتية', icon: null, color: 'text-slate-300', special: false },
-    { name: 'روايات', icon: null, color: 'text-slate-300', special: false },
-    { name: 'أطفال', icon: null, color: 'text-slate-300', special: false },
-    { name: 'علمية', icon: null, color: 'text-slate-300', special: false },
-    { name: 'أدب عالمي', icon: null, color: 'text-slate-300', special: false }
+    { name: 'الأدب العربي', icon: null, color: 'text-slate-300', special: false },
+    { name: 'الفلسفة وعلم النفس', icon: null, color: 'text-slate-300', special: false },
+    { name: 'التحقيق والجريمة', icon: null, color: 'text-slate-300', special: false },
+    { name: 'المقالات الأدبية', icon: null, color: 'text-slate-300', special: false },
+    { name: 'التنمية الذاتية', icon: null, color: 'text-slate-300', special: false }
   ];
 
   return (
@@ -124,12 +122,12 @@ const Footer = () => {
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
                   <BookOpen className="h-7 w-7 text-white" strokeWidth={2} />
                 </div>
-                <span className="text-3xl font-bold text-white">مكتبة الطموح</span>
+                <span className="text-3xl font-bold text-white">دار الطموح للنشر</span>
               </div>
               
               <p className="text-slate-300 leading-relaxed mb-8 max-w-md text-lg">
-                مكتبة الطموح - حيث تبدأ رحلتك من أول صفحة. نقدم لك أفضل الكتب العربية والمترجمة 
-                لتغذية عقلك وتنمية معارفك مع عروض خاصة وإصدارات حصرية.
+                دار الطموح للنشر والتوزيع - نقدم لك أفضل الإصدارات الأدبية والثقافية العربية 
+                المتميزة لتغذية عقلك وتنمية معارفك مع إصدارات حصرية ومتنوعة.
               </p>
 
               {/* Social Media Icons */}
@@ -156,7 +154,7 @@ const Footer = () => {
 
               <div className="flex items-center gap-2 text-orange-400">
                 <Heart className="h-4 w-4 animate-pulse" />
-                <span className="text-sm font-medium">صُنع بحب للقراء العرب</span>
+                <span className="text-sm font-medium">صُنع بحب لعشاق الأدب والثقافة</span>
               </div>
             </div>
 
@@ -185,7 +183,7 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-6 text-white flex items-center gap-2">
                 <div className="w-1 h-6 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full"></div>
-                التصنيفات
+                تصنيفات إصداراتنا
               </h3>
               <ul className="space-y-4">
                 {categories.map((category, index) => {
@@ -198,38 +196,24 @@ const Footer = () => {
                       >
                         <div className={`w-1.5 h-1.5 rounded-full group-hover:bg-orange-400 transition-colors ${
                           category.special 
-                            ? category.name === 'عروض خاصة' 
-                              ? 'bg-red-400/50 group-hover:bg-red-400' 
-                              : 'bg-green-400/50 group-hover:bg-green-400'
+                            ? 'bg-green-400/50 group-hover:bg-green-400'
                             : 'bg-orange-400/50'
                         }`}></div>
                         
                         <div className="flex items-center gap-1.5">
                           {IconComponent && (
                             <IconComponent className={`h-3.5 w-3.5 ${
-                              category.special 
-                                ? category.name === 'عروض خاصة' 
-                                  ? 'animate-pulse' 
-                                  : 'animate-pulse'
-                                : ''
+                              category.special ? 'animate-pulse' : ''
                             }`} />
                           )}
                           <span className={category.special ? 'font-medium' : ''}>{category.name}</span>
                         </div>
 
-                        {/* Special badges */}
-                        {category.name === 'عروض خاصة' && (
-                          <div className="mr-auto">
-                            <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full animate-pulse">
-                              بوقتٍ محدود
-                            </span>
-                          </div>
-                        )}
-                        
+                        {/* Special badge for Dar Al-Tumooh publications */}
                         {category.name === 'إصدارات دار الطموح' && (
                           <div className="mr-auto">
                             <span className="bg-green-500 text-white text-xs px-2 py-0.5 rounded-full">
-                              حصري
+                              إصدارات حصرية
                             </span>
                           </div>
                         )}
@@ -239,14 +223,14 @@ const Footer = () => {
                 })}
               </ul>
 
-              {/* Special Categories Notice */}
+              {/* Publications Notice */}
               <div className="mt-6 p-3 bg-gradient-to-r from-orange-500/10 to-orange-600/10 rounded-lg border border-orange-500/20">
                 <div className="flex items-center gap-2 text-orange-400 text-sm font-medium mb-1">
-                  <Percent className="h-3.5 w-3.5 animate-spin" style={{animationDuration: '3s'}} />
-                  <span>عروض محدودة</span>
+                  <Star className="h-3.5 w-3.5 animate-spin" style={{animationDuration: '3s'}} />
+                  <span>إصدارات متميزة</span>
                 </div>
                 <p className="text-xs text-slate-400">
-                  تصفح العروض الخاصة والإصدارات الحصرية
+                  تصفح مجموعة إصداراتنا الحصرية والمتنوعة
                 </p>
               </div>
             </div>
@@ -267,18 +251,22 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-right">
               <p className="text-slate-400 text-sm mb-2">
-                جميع الحقوق محفوظة © 2025 مكتبة الطموح
+                جميع الحقوق محفوظة © 2025 دار الطموح للنشر والتوزيع
               </p>
               <p className="text-orange-400 font-medium text-sm">
-                مكتبة الطموح – حيث تبدأ رحلتك من أول صفحة
+                دار الطموح للنشر – حيث تبدأ رحلتك الأدبية من أول صفحة
               </p>
             </div>
 
             {/* Developer Credits */}
             <div className="text-center lg:text-left">
               <p className="text-slate-300 text-sm">
-                تمت البرمجة من قبل 
+                تمت البرمجة من قبل الشاعر والمبرمج 
                 <span className="text-orange-400 font-medium"> ميسرة سالم</span>
+              </p>
+              <p className="text-slate-300 text-sm">
+                للتواصل :  
+                <span className="text-orange-400 font-medium">+90 537 661 77 91</span>
               </p>
             </div>
 
@@ -296,7 +284,7 @@ const Footer = () => {
         <div className="text-center pb-6">
           <div className="inline-flex items-center gap-2 text-slate-500">
             <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse" />
-            <span className="text-xs">شكراً لاختياركم مكتبة الطموح</span>
+            <span className="text-xs">شكراً لاختياركم دار الطموح للنشر والتوزيع</span>
             <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse" />
           </div>
         </div>
@@ -325,6 +313,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 
 export default Footer;
