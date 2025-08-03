@@ -233,7 +233,7 @@ const Books = () => {
 
   const sendToTelegram = () => {
     const message = generateOrderMessage();
-    window.open(`https://t.me/tamouh_book_store=${encodeURIComponent(message)}`, '_blank');
+    window.open(`t.me/tamouh_book_store=${encodeURIComponent(message)}`, '_blank');
   };
 
   const toggleDescription = (bookId: number) => {
@@ -698,6 +698,7 @@ const Books = () => {
 };
 
 export default Books;
+
 
 
 
