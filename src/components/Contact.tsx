@@ -179,14 +179,8 @@ const Contact = () => {
                 <h3 className="text-lg font-bold dark:text-white text-[#1d2d50] transition-colors duration-500">ساعات العمل</h3>
               </div>
               <div className="space-y-2 dark:text-slate-300 text-[#6c7a89] transition-colors duration-500">
-                <div className="flex justify-between">
-                  <span>الأحد - الخميس</span>
-                  <span>9:00 ص - 10:00 م</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>الجمعة - السبت</span>
-                  <span>10:00 ص - 11:00 م</span>
-                </div>
+              <h3>نحن نعمل 7 / 24</h3>
+              
               </div>
             </div>
           </div>
