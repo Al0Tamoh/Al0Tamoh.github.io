@@ -251,7 +251,7 @@ const Footer = () => {
             {/* Developer Credits */}
             <div className="text-center lg:text-left">
               <p className="text-slate-300 text-sm">
-                تمت البرمجة من قبل الشاعر والمبرمج 
+                تمت البرمجة من قبل المبرمج 
                 <span className="text-orange-400 font-medium"> ميسرة سالم</span>
               </p>
               <p className="text-slate-300 text-sm">
@@ -305,3 +305,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
